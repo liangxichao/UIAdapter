@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xc.ui.views.UILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    app:ui_enablePadPaddingLeft="true"
+    app:ui_enablePadPaddingRight="true"
+    app:ui_padding="30">
+
+    <xc.ui.views.UIButton
+        android:onClick="onSample"
+        android:text="sample 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <xc.ui.views.UIButton
+        app:ui_marginTop="50"
+        android:onClick="onSample2"
+        android:text="sample 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <xc.ui.views.UIButton
+        app:ui_marginTop="50"
+        android:onClick="onSample3"
+        android:text="sample 3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</xc.ui.views.UILinearLayout>

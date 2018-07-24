@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UIView">
+
+        <attr name="ui_width" format="float" />
+        <attr name="ui_height" format="float" />
+
+        <attr name="ui_margin" format="float"/>
+        <attr name="ui_marginLeft" format="float" />
+        <attr name="ui_marginRight" format="float" />
+        <attr name="ui_marginTop" format="float" />
+        <attr name="ui_marginBottom" format="float" />
+
+        <attr name="ui_textSize" format="float" />
+
+        <attr name="ui_padding" format="float" />
+        <attr name="ui_paddingLeft" format="float" />
+        <attr name="ui_paddingRight" format="float" />
+        <attr name="ui_paddingTop" format="float" />
+        <attr name="ui_paddingBottom" format="float" />
+
+        <attr name="ui_drawablePadding" format="float" />
+        <attr name="ui_drawableWidth" format="float" />
+        <attr name="ui_drawableHeight" format="float" />
+
+        <attr name="ui_enablePadMarginLeft" format="boolean"/>
+        <attr name="ui_enablePadMarginRight" format="boolean"/>
+
+        <attr name="ui_enablePadPaddingLeft" format="boolean"/>
+        <attr name="ui_enablePadPaddingRight" format="boolean"/>
+
+        <attr name="ui_lineSpacing" format="float"/>
+        <attr name="ui_minHeight" format="float"/>
+        <attr name="ui_minWidth" format="float"/>
+
+        <attr name="ui_dividerHeight" format="float"/>
+        <attr name="ui_horizontalSpacing" format="float"/>
+        <attr name="ui_verticalSpacing" format="float"/>
+
+    </declare-styleable>
+</resources>

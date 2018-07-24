@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xc.ui.views.UILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/navigation"
+    app:ui_height="120">
+
+    <xc.ui.views.UITextView
+        android:id="@+id/iv_exit"
+        android:text="@string/exit"
+        android:drawableTop="@mipmap/exit"
+        style="@style/ILiveStudentMenuText"/>
+
+    <xc.ui.views.UITextView
+        android:id="@+id/iv_pure"
+        android:text="@string/fullscreen"
+        android:drawableTop="@mipmap/pure"
+        style="@style/ILiveStudentMenuText"/>
+
+    <xc.ui.views.UITextView
+        android:id="@+id/iv_chat"
+        android:drawableTop="@mipmap/chat"
+        android:text="@string/chat"
+        style="@style/ILiveStudentMenuText"/>
+
+    <xc.ui.views.UITextView
+        android:id="@+id/iv_praise"
+        android:drawableTop="@mipmap/praise"
+        android:text="@string/thumbs_up"
+        style="@style/ILiveStudentMenuText"/>
+
+</xc.ui.views.UILinearLayout>

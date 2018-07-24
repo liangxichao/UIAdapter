@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <xc.ui.views.UIImageView
+        android:id="@+id/iv_bg"
+        app:ui_width="602"
+        app:ui_height="177"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/upload_22" />
+
+    <xc.ui.views.UIProgressBar
+        android:id="@+id/pb_progress"
+        app:ui_marginLeft="42"
+        app:ui_marginTop="105"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ui_width="500"
+        app:ui_height="20"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/layer_upload_progress"/>
+</RelativeLayout>
