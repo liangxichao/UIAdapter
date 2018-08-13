@@ -13,4 +13,4 @@
 即可
       
 # 效果 #
-![](https://github.com/liangxichao/UIAdapter/art/art_1.png)
+![](https://github.com/liangxichao/UIAdapter/blob/master/art/art_1.png)
