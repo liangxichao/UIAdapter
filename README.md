@@ -1,4 +1,6 @@
-用法：
+# UIAdapter
+
+# 用法：
 在工程的的基类 Activity 的 onCreate 生命周期方法里添加：
     TDLayoutMgr.init(this);
     如：
@@ -9,4 +11,6 @@
             TDLayoutMgr.init(this);
         }
 即可
-        
+      
+# 效果 #
+![](https://github.com/liangxichao/UIAdapter/art/art_1.png)
