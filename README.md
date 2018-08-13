@@ -2,6 +2,7 @@
 
 # 用法：
 在工程的的基类 Activity 的 onCreate 生命周期方法里添加：
+``````
     TDLayoutMgr.init(this);
     如：
         @Override
@@ -11,6 +12,7 @@
             TDLayoutMgr.init(this);
         }
 即可
+``````
       
 # 效果 #
 ![](https://github.com/liangxichao/UIAdapter/blob/master/art/art_1.png)
