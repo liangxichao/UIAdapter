@@ -1,6 +1,6 @@
 # UIAdapter
 
-# 用法：
+## 用法：
 在工程的的基类 Activity 的 onCreate 生命周期方法里添加：
 ``````
     LayoutMgr.init(this);
@@ -13,9 +13,10 @@
         }
 
         导入自定义控件：
-        views 目录下的
-        ![](https://github.com/liangxichao/UIAdapter/blob/master/art/art_1.png)
-
+        views 目录下的 
+``````
+   ![](https://github.com/liangxichao/UIAdapter/blob/master/art/views.PNG)
+``````
         这是只是包括了常用的一些控件，其他的控件可以依照如下的模板来继承
         public class 自定义类名 extends 安卓控件类名 {
             protected UIParams uip;
