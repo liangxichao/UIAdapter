@@ -12,7 +12,7 @@ import xc.ui.views.UIParams;
  * @author lxc
  * time at 2016/11/11
  */
-public class TDLayoutMgr {
+public class LayoutMgr {
 
     /**
      * 当前的 UI 是基于 1334*750 尺寸设计的， 以下的一些默认值可自定义
@@ -35,10 +35,10 @@ public class TDLayoutMgr {
 
     public static boolean isPad;
 
-    private TDLayoutMgr() {}
+    private LayoutMgr() {}
 
     public static void init(Context context) {
-        if (TDLayoutMgr.screenW > 0)
+        if (LayoutMgr.screenW > 0)
             return;
 
         screenW = ScreenUtils.getScreenWidth(context);

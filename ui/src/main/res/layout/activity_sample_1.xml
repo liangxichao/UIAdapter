@@ -1,48 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="#384b5e"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#384b5e"
+    android:orientation="vertical">
 
     <xc.ui.views.UIScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <xc.ui.views.UILinearLayout
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <xc.ui.views.UIView
-                app:ui_marginTop="50"
-                app:ui_marginBottom="50"
-                app:ui_width="490"
-                app:ui_height="170"
-                android:background="@mipmap/btn_battle_small"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_battle_small"
+                app:ui_height="170"
+                app:ui_marginBottom="50"
+                app:ui_marginTop="50"
+                app:ui_width="490" />
 
             <include
-                android:layout_height="wrap_content"
+                layout="@layout/menu_ilive_student"
                 android:layout_width="match_parent"
-                layout="@layout/menu_ilive_student"/>
+                android:layout_height="wrap_content" />
 
-            <include layout="@layout/dialog_class_upload"/>
-
+            <include layout="@layout/dialog_class_upload" />
 
             <xc.ui.views.UITextView
-                app:ui_width="690"
-                app:ui_lineSpacing="30"
-                app:ui_marginTop="50"
-                app:ui_marginBottom="100"
-                app:ui_textSize="26"
-                android:textColor="#Fff"
-                android:text="@string/desc"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:text="@string/desc"
+                android:textColor="#Fff"
+                app:ui_lineSpacing="30"
+                app:ui_marginBottom="100"
+                app:ui_marginTop="50"
+                app:ui_textSize="26"
+                app:ui_width="690" />
 
         </xc.ui.views.UILinearLayout>
 

@@ -23,6 +23,7 @@
         <attr name="ui_drawableWidth" format="float" />
         <attr name="ui_drawableHeight" format="float" />
 
+        <!-- 用于平板 16:9手机屏幕比例的适配 -->
         <attr name="ui_enablePadMarginLeft" format="boolean"/>
         <attr name="ui_enablePadMarginRight" format="boolean"/>
 

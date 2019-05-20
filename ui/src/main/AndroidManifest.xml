@@ -20,6 +20,7 @@
         <activity android:name=".SampleAct_1"/>
         <activity android:name=".SampleAct_2"/>
         <activity android:name=".SampleAct_3"/>
+        <activity android:name=".SampleAct_4"/>
     </application>
 
 </manifest>

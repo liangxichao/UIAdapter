@@ -13,6 +13,6 @@ public abstract class BaseActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // 该句代码会多次调用，但只会执行一次
-        TDLayoutMgr.init(this);
+        LayoutMgr.init(this);
     }
 }

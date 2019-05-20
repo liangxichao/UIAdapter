@@ -169,6 +169,6 @@ public class ScreenUtils {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return dpi == 0 ? TDLayoutMgr.screenH : dpi;
+		return dpi == 0 ? LayoutMgr.screenH : dpi;
 	}
 }

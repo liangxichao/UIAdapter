@@ -5,32 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
     app:ui_enablePadPaddingLeft="true"
     app:ui_enablePadPaddingRight="true"
-    app:ui_padding="30">
+    app:ui_padding="30"
+    tools:context=".MainActivity">
 
     <xc.ui.views.UIButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onSample"
-        android:text="sample 1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:text="ScrollView TextView ImageView ProgressBar ... 的演示" />
 
     <xc.ui.views.UIButton
-        app:ui_marginTop="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="onSample2"
-        android:text="sample 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:text="ListView 的演示"
+        app:ui_marginTop="50" />
 
     <xc.ui.views.UIButton
-        app:ui_marginTop="50"
-        android:onClick="onSample3"
-        android:text="sample 3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:onClick="onSample3"
+        android:text="GridView 的演示"
+        app:ui_marginTop="50" />
+
+    <xc.ui.views.UIButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample4"
+        android:text="ConstrainLayout 的演示"
+        app:ui_marginTop="50" />
 
 </xc.ui.views.UILinearLayout>

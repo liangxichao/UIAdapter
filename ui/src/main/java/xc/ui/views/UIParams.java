@@ -12,7 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import xc.ui.R;
-import xc.ui.TDLayoutMgr;
+import xc.ui.LayoutMgr;
 
 /**
  * 自定义布局参数
@@ -23,7 +23,7 @@ import xc.ui.TDLayoutMgr;
  * time at 2016/11/11
  */
 public class UIParams {
-    /** 此默认值必须为负数  {@link TDLayoutMgr#getActualPX(float)} 方法的实现决定的 */
+    /** 此默认值必须为负数  {@link LayoutMgr#getActualPX(float)} 方法的实现决定的 */
     public static final float UI_DEFAULT_PARAM = Integer.MIN_VALUE;
 
     public float width, height;
@@ -111,12 +111,12 @@ public class UIParams {
     public boolean enablePadPaddingLeft, enablePadPaddingRight;
 
     public void setViewPadding(View target, float left, float right, float top, float bottom) {
-        left = (int) TDLayoutMgr.getActualPX(left);
-        right = (int) TDLayoutMgr.getActualPX(right);
-        top = (int) TDLayoutMgr.getActualPX(top);
-        bottom = (int) TDLayoutMgr.getActualPX(bottom);
+        left = (int) LayoutMgr.getActualPX(left);
+        right = (int) LayoutMgr.getActualPX(right);
+        top = (int) LayoutMgr.getActualPX(top);
+        bottom = (int) LayoutMgr.getActualPX(bottom);
 
-        int p = (TDLayoutMgr.screenW - TDLayoutMgr.referWidth) / 2;
+        int p = (LayoutMgr.screenW - LayoutMgr.referWidth) / 2;
         if (p < 0) {
             p = 0;
         }
@@ -155,27 +155,27 @@ public class UIParams {
                                                float left, float right,
                                                float top, float bottom) {
 
-        int p = (TDLayoutMgr.screenW - TDLayoutMgr.referWidth) / 2;
+        int p = (LayoutMgr.screenW - LayoutMgr.referWidth) / 2;
         if (p < 0) {
             p = 0;
         }
 
         if (width >= 0) {
-            temp.width = (int) TDLayoutMgr.getActualPX(width);
+            temp.width = (int) LayoutMgr.getActualPX(width);
         }
 
         if (height >= 0) {
-            temp.height = (int) TDLayoutMgr.getActualPX(height);
+            temp.height = (int) LayoutMgr.getActualPX(height);
         }
 
         if (temp instanceof ViewGroup.MarginLayoutParams) {
 
             ViewGroup.MarginLayoutParams lp = (ViewGroup.MarginLayoutParams) temp;
 
-            left = (int) TDLayoutMgr.getActualPX(left);
-            right = (int) TDLayoutMgr.getActualPX(right);
-            top = (int) TDLayoutMgr.getActualPX(top);
-            bottom = (int) TDLayoutMgr.getActualPX(bottom);
+            left = (int) LayoutMgr.getActualPX(left);
+            right = (int) LayoutMgr.getActualPX(right);
+            top = (int) LayoutMgr.getActualPX(top);
+            bottom = (int) LayoutMgr.getActualPX(bottom);
 
             if (left != UIParams.UI_DEFAULT_PARAM) {
                 lp.leftMargin = (int) left;
@@ -213,18 +213,18 @@ public class UIParams {
             setViewPadding(view, pLeft, pRight, pTop, pBottom);
 
             if (minHeight != UI_DEFAULT_PARAM) {
-                view.setMinimumHeight((int) TDLayoutMgr.getActualPX(minHeight));
+                view.setMinimumHeight((int) LayoutMgr.getActualPX(minHeight));
             }
 
             if (minWidth != UI_DEFAULT_PARAM) {
-                view.setMinimumWidth((int) TDLayoutMgr.getActualPX(minWidth));
+                view.setMinimumWidth((int) LayoutMgr.getActualPX(minWidth));
             }
 
             if (view instanceof TextView) {
                 TextView textView = (TextView) view;
 
-                int right = (int) TDLayoutMgr.getActualPX(drawableWidth);
-                int bottom = (int) TDLayoutMgr.getActualPX(drawableHeight);
+                int right = (int) LayoutMgr.getActualPX(drawableWidth);
+                int bottom = (int) LayoutMgr.getActualPX(drawableHeight);
 
                 if (right > 0 && bottom > 0) {
                     Drawable[] ds = textView.getCompoundDrawables();
@@ -252,25 +252,25 @@ public class UIParams {
                 }
 
                 if (drawablePadding >= 0) {
-                    textView.setCompoundDrawablePadding((int) TDLayoutMgr.getActualPX(drawablePadding));
+                    textView.setCompoundDrawablePadding((int) LayoutMgr.getActualPX(drawablePadding));
                 }
 
                 if (textSize != UI_DEFAULT_PARAM) {
-                    textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, TDLayoutMgr.getActualPX(textSize));
+                    textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, LayoutMgr.getActualPX(textSize));
                 }
 
                 if (lineSpacing != UI_DEFAULT_PARAM) {
-                    textView.setLineSpacing(TDLayoutMgr.getActualPX(lineSpacing), 1f);
+                    textView.setLineSpacing(LayoutMgr.getActualPX(lineSpacing), 1f);
                 }
             }
 
             if (view instanceof ListView) {
-                ((ListView)view).setDividerHeight((int) TDLayoutMgr.getActualPX(dividerHeight));
+                ((ListView)view).setDividerHeight((int) LayoutMgr.getActualPX(dividerHeight));
             }
 
             if (view instanceof GridView) {
-                ((GridView)view).setHorizontalSpacing((int) TDLayoutMgr.getActualPX(horizontalSpacing));
-                ((GridView)view).setVerticalSpacing((int) TDLayoutMgr.getActualPX(verticalSpacing));
+                ((GridView)view).setHorizontalSpacing((int) LayoutMgr.getActualPX(horizontalSpacing));
+                ((GridView)view).setVerticalSpacing((int) LayoutMgr.getActualPX(verticalSpacing));
             }
 
             return params;

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.view.View;
 
 import xc.ui.BaseActivity;
@@ -29,5 +30,9 @@ public class MainActivity extends BaseActivity {
 
     public void onSample3(View view) {
         startActivity(new Intent(this, SampleAct_3.class));
+    }
+
+    public void onSample4(View view) {
+        startActivity(new Intent(this, SampleAct_4.class));
     }
 }

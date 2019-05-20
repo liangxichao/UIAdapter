@@ -22,8 +22,10 @@ public class SampleAct_3 extends BaseActivity {
 
         GridView gridView = findViewById(R.id.gridView);
         gridView.setAdapter(new MyAdapter());
-        // gridView.setHorizontalSpacing((int) TDLayoutMgr.getActualPX(30));
-        // gridView.setVerticalSpacing((int) TDLayoutMgr.getActualPX(30));
+
+        // 这是手动动态设置
+        // gridView.setHorizontalSpacing((int) LayoutMgr.getActualPX(30));
+        // gridView.setVerticalSpacing((int) LayoutMgr.getActualPX(30));
     }
 
     class MyAdapter extends BaseAdapter {
