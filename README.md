@@ -41,7 +41,25 @@
       
 # 效果 #
 红色框是适配设置后的视图
+``````
+	<xc.ui.views.UIImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/upload_22"
+        app:ui_height="177"
+        app:ui_width="602" />
+``````
+
 绿色框是通过dp设置后的视图
+``````
+	<xc.ui.views.UIImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="150.5dp"
+        android:layout_height="44.25dp"
+        android:background="@mipmap/upload_22"/>
+``````
+
 在同样屏幕大小下，不同屏幕密度下的视图效果如下：
 ![](https://github.com/liangxichao/UIAdapter/blob/master/art/example.PNG)
 可以看出，绿框的视图的会随着屏幕密度的变化有不同的显示，而红框内的视图则可以保持一致的显示效果
