@@ -43,3 +43,4 @@
 绿色框是通过dp设置后的视图
 在同样屏幕大小下，不同屏幕密度下的视图效果如下：
 ![](https://github.com/liangxichao/UIAdapter/blob/master/art/example.PNG)
+可以看出，绿框的视图的会随着屏幕密度的变化有不同的显示，而红框内的视图则可以保持一致的显示效果
