@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onSample4"
-        android:text="ConstrainLayout 的演示"
+        android:text="ConstrainLayout 的演示和自定义控件的使用"
         app:ui_marginTop="50" />
 
 </xc.ui.views.UILinearLayout>

@@ -32,6 +32,8 @@
 
             <include layout="@layout/dialog_class_upload" />
 
+            <include layout="@layout/dialog_class_upload2" />
+
             <xc.ui.views.UITextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
