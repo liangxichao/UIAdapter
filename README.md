@@ -39,4 +39,7 @@
 ``````
       
 # 效果 #
-![](https://github.com/liangxichao/UIAdapter/blob/master/art/art_1.png)
+红色框是适配设置后的视图
+绿色框是通过dp设置后的视图
+在同样屏幕大小下，不同屏幕密度下的视图效果如下：
+![](https://github.com/liangxichao/UIAdapter/blob/master/art/example.PNG)
