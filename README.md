@@ -8,6 +8,7 @@
         @Override
         protected void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
+            // 注意，要在setContentView(xxx);代码之前执行 
             // 该句代码会多次调用，但只会执行一次
             LayoutMgr.init(this);
         }
